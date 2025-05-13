@@ -588,7 +588,7 @@ body {
 .about-hero-bg {
     width: 100%;
     min-height: 220px;
-    background: linear-gradient(rgba(13,51,94,0.55), rgba(13,51,94,0.55)), url('images/bg2.png') center/cover no-repeat;
+    background:url('images/bg2.png') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
