@@ -784,4 +784,19 @@ body {
     .site-footer {
         font-size: 0.92rem;
     }
+}
+
+.featured-product-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.featured-product-link:hover {
+    transform: translateY(-5px);
+}
+
+.featured-product-link:hover .featured-product-card {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 } 
