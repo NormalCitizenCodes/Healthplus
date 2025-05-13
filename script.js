@@ -84,37 +84,3 @@ document.querySelector('.checkout-btn').addEventListener('click', () => {
 
 // Initialize cart on page load
 updateCart();
-
-// Featured Products Carousel Logic
-const featuredList = document.getElementById('featuredProductsList');
-const dots = document.querySelectorAll('.carousel-dots .dot');
-const prevBtn = document.getElementById('carouselPrev');
-const nextBtn = document.getElementById('carouselNext');
-const totalSlides = 4; // Number of featured products
-let currentSlide = 0;
-
-function updateCarousel() {
-  const cardWidth = featuredList.children[0].offsetWidth + 40; // card + gap
-  featuredList.style.transform = `translateX(-${currentSlide * cardWidth}px)`;
-  dots.forEach((dot, idx) => {
-    dot.classList.toggle('active', idx === currentSlide);
-  });
-}
-if (featuredList && prevBtn && nextBtn) {
-  prevBtn.addEventListener('click', () => {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-    updateCarousel();
-  });
-  nextBtn.addEventListener('click', () => {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    updateCarousel();
-  });
-  dots.forEach((dot, idx) => {
-    dot.addEventListener('click', () => {
-      currentSlide = idx;
-      updateCarousel();
-    });
-  });
-  window.addEventListener('resize', updateCarousel);
-  updateCarousel();
-} 
