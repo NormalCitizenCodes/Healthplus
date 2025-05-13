@@ -70,7 +70,7 @@ body {
 }
 
 .hero {
-    background: var(--primary) url('images/ustp.jpg') center/cover no-repeat;
+    background: var(--primary) url('images/ustp.svg') center/cover no-repeat;
     background-blend-mode: overlay;
     color: var(--white);
     text-align: center;
@@ -577,7 +577,7 @@ body {
 .about-hero-bg {
     width: 100%;
     min-height: 220px;
-    background:url('images/bg2.png') center/cover no-repeat;
+    background:url('images/bg2.svg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
