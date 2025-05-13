@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - HealthPlus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo"><img src="images/logo.png" alt="HealthPlus Logo" class="logo-img"> HealthPlus+</div>
+            <button class="navbar-toggle" id="navbarToggle">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="products-page-layout">
+        <aside class="sidebar-filters">
+            <h3>ONLINE PHARMACY</h3>
+            <div class="filter-section">
+                <strong>Pick Up Options</strong><br>
+                <label><input type="checkbox"> Home Delivery</label><br>
+                <label><input type="checkbox"> Click & Collect</label>
+            </div>
+            <div class="filter-section">
+                <strong>Brand</strong><br>
+                <input type="text" placeholder="Enter Brand Name Here" class="brand-search"><br>
+                <label><input type="checkbox"> ABDIN (1)</label><br>
+                <label><input type="checkbox"> AKIDIN (1)</label><br>
+                <label><input type="checkbox"> ANOION (1)</label><br>
+                <label><input type="checkbox"> AZILECT (1)</label><br>
+                <label><input type="checkbox"> BRINTELLIX (2)</label><br>
+                <label><input type="checkbox"> CORDARONE (1)</label><br>
+                <a href="#" class="show-all">Show All</a>
+            </div>
+            <div class="filter-section">
+                <strong>Price From</strong><br>
+                <span style="font-weight:bold;">₱</span> <input type="number" min="0" style="width:60px;"> To <input type="number" min="0" style="width:60px;">
+                <br>
+                <button class="filter-reset">Reset</button>
+                <button class="filter-go">Go</button>
+            </div>
+            <div class="filter-section">
+                <strong>Promotion</strong><br>
+                <label><input type="checkbox"> BUY 30 GET 10% DISCOUNT! (1)</label><br>
+                <label><input type="checkbox"> BUY 30 GET 30% DISCOUNT! (4)</label><br>
+                <label><input type="checkbox"> BUY 30 GET ADDITIONAL 5% - MEMBER (3)</label><br>
+                <label><input type="checkbox"> BUY 30 PCS GET 30% OFF (1)</label>
+            </div>
+            <div class="filter-section">
+                <label><input type="checkbox"> In Stock</label><br>
+                <label><input type="checkbox"> Prescription</label>
+            </div>
+        </aside>
+        <main class="products-container">
+            <h1>Our Health Products</h1>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/vitamin-c.png" alt="Vitamin C">
+                    <h2>Vitamin C</h2>
+                    <p>Boosts immunity and overall health.</p>
+                    <span class="price">₱110.99</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/omega-3.png" alt="Omega 3">
+                    <h2>Omega 3</h2>
+                    <p>Supports heart and brain function.</p>
+                    <span class="price">₱120.50</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/multivitamin.png" alt="Multivitamin">
+                    <h2>Multivitamin</h2>
+                    <p>Daily essential vitamins and minerals.</p>
+                    <span class="price">₱140.00</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/probiotic.png" alt="Probiotic">
+                    <h2>Probiotic</h2>
+                    <p>Promotes digestive health.</p>
+                    <span class="price">₱210.00</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/buscopan.png" alt="Buscopan">
+                    <h2>Buscopan</h2>
+                    <p>10 mg Tablet</p>
+                    <span class="price">₱33.50</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/buscopan-venus.png" alt="Buscopan Venus">
+                    <h2>Buscopan Venus</h2>
+                    <p>10 mg / 500 mg Film Coated Tablet</p>
+                    <span class="price">₱40.50</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/essentale-forte.png" alt="Essentiale Forte P">
+                    <h2>Essentiale Forte P</h2>
+                    <p>300 mg Hard Gelatin Capsule</p>
+                    <span class="price">₱38.50</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/erceflora.png" alt="Erceflora Kiddie">
+                    <h2>Erceflora Kiddie</h2>
+                    <p>Oral Suspension 5 mL</p>
+                    <span class="price">₱44.50</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <aside class="cart-sidebar" id="cartSidebar">
+                <h2>Your Cart</h2>
+                <ul class="cart-items"></ul>
+                <div class="cart-total">Total: ₱<span id="cartTotal">0.00</span></div>
+                <button class="checkout-btn">Checkout</button>
+            </aside>
+        </main>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-col">
+                <h4>STORE SERVICES</h4>
+                <ul>
+                    <li><a href="#">Gamot Padala</a></li>
+                    <li><a href="#">Drug Information</a></li>
+                    <li><a href="#">Gift Certificates</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>VALUE CARDS</h4>
+                <ul>
+                    <li><a href="#">Suki Card</a></li>
+                    <li><a href="#">Suki Points Query</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>ABOUT US</h4>
+                <ul>
+                    <li><a href="#">Our mission</a></li>
+                    <li><a href="#">Our vision</a></li>
+                    <li><a href="#">Our values</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-fb">
+                <img src="images/page-ads.png" alt="Facebook Page" class="fb-page-img">
+            </div>
+            <div class="footer-col footer-contact">
+                <h4>CONNECT WITH US:</h4>
+                <ul>
+                    <li><a href="mailto:info@healthplus.com">healthplusph@gmail.com</a></li>
+                    <li><a href="#"><img src="images/fb-icon.png" class="icon"> /healthplusph</a></li>
+                    <li><a href="#"><img src="images/x-icon.png" class="icon"> /healthplusph</a></li>
+                    <li><a href="#"><img src="images/ig-icon.png" class="icon"> /healthplusph</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a> | <a href="#">Return/Exchange Policy</a></span>
+            <span>© 2025 HealthPlus. All Rights Reserved.</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    // Hamburger menu toggle for mobile
+    const navbarToggle = document.getElementById('navbarToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (navbarToggle && navLinks) {
+        navbarToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    }
+    </script>
+</body>
+</html> 
