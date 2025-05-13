@@ -278,15 +278,15 @@ body {
 
 .cart-sidebar {
     position: fixed;
-    top: 80px;
+    bottom: 30px;
     right: 30px;
-    width: 300px;
+    width: 320px;
     background: var(--white);
     color: var(--primary);
     border-radius: 10px;
     box-shadow: 0 2px 16px rgba(13,49,130,0.13);
     padding: 1.5rem 1rem;
-    z-index: 100;
+    z-index: 1000;
     min-height: 200px;
 }
 .cart-sidebar h2 {
@@ -900,5 +900,12 @@ body {
     }
     .values-grid {
         grid-template-columns: 1fr;
+    }
+    .cart-sidebar {
+        width: 95vw;
+        right: 2.5vw;
+        left: 2.5vw;
+        bottom: 10px;
+        padding: 1rem 0.5rem;
     }
 } 

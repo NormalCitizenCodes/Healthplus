@@ -15,8 +15,14 @@ const cart = [];
 function updateCart() {
   const cartItems = document.querySelector('.cart-items');
   const cartTotal = document.getElementById('cartTotal');
+  const cartSidebar = document.getElementById('cartSidebar');
   cartItems.innerHTML = '';
   let total = 0;
+  if (cart.length === 0) {
+    cartSidebar.style.display = 'none';
+  } else {
+    cartSidebar.style.display = 'block';
+  }
   cart.forEach((item, idx) => {
     const li = document.createElement('li');
     li.textContent = `${item.name} `;
